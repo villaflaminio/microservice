@@ -38,7 +38,6 @@ public class BookService {
                     .title(bookDTO.title)
                     .description(bookDTO.description)
                     .price(bookDTO.price)
-                    .condition(bookDTO.condition)
                     .phoneNumber(bookDTO.phoneNumber)
                     .build());
         }
@@ -47,7 +46,7 @@ public class BookService {
     }
 
     public Book update(BookDTO bookDTO) {
-        if (!bookRepositor.existsById(bookDTO.id)) {
+        if (bookRepositor.existsById(bookDTO.id)) {
             return bookRepositor.save(Book.builder()
                     .id(bookDTO.id)
                     .googleBookId(bookDTO.googleBookId)
@@ -55,7 +54,6 @@ public class BookService {
                     .title(bookDTO.title)
                     .description(bookDTO.description)
                     .price(bookDTO.price)
-                    .condition(bookDTO.condition)
                     .phoneNumber(bookDTO.phoneNumber)
                     .build());
         }

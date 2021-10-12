@@ -1,10 +1,10 @@
-package com.flaminiovilla.discoveryservice;
+package com.flaminiovilla.eurekadiscoveryserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryServiceApplicationTests {
+class EurekaDiscoveryServerApplicationTests {
 
     @Test
     void contextLoads() {

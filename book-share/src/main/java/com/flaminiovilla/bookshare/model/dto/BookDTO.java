@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.sql.Blob;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @AllArgsConstructor
