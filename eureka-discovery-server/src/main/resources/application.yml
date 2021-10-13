@@ -1,6 +1,0 @@
-server:
-  port: 6001
-eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false

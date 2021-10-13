@@ -17,7 +17,8 @@
 	
 	<modules>
 		<module>book-share</module>
-		<module>discovery-service</module>
+		<module>eureka-client</module>
+		<module>eureka-discovery-server</module>
 		</modules>
 
 </project>
