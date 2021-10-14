@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.stereotype.Component;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-//@Log4j2
+@Log4j2
 @EnableSwagger2
 @SpringBootApplication
 @EnableEurekaClient
@@ -21,12 +21,4 @@ public class SecurityApplication {
 		SpringApplication.run(SecurityApplication.class, args);
 	}
 
-//	@Component
-//	public  class Runner implements CommandLineRunner {
-//		@Override
-//		public void run(String... args) throws Exception {
-//			log.info("Log4j2 logger works!");
-//
-//		}
-//	}
 }

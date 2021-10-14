@@ -10,7 +10,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 @Configuration
 public class SwaggerConfig {
-//http://localhost:8080/swagger-ui.html#/
+//http://localhost:6003/auth/swagger
 
     @Bean
     public Docket api() {
@@ -18,8 +18,11 @@ public class SwaggerConfig {
                 .select()
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
+
                 .build();
     }
+
+
 // .apis(RequestHandlerSelectors.basePackage("com.flaminiovilla.bookshare.security.rest"))
 //                .apis(RequestHandlerSelectors.basePackage("com.flaminiovilla.bookshare.controller"))
 }
