@@ -27,6 +27,15 @@ public class BookController {
     List<Book> search(@PathVariable("search") String search){
         return bookService.search(search);
     }
+    /**
+     * restituisce tutti i librit  che contengono la stringa di ricerca nel titolo
+     * @return List<Book>
+     * se null restituisce []
+     */
+    @GetMapping("/findAll")
+    List<Book> findAll(){
+        return bookService.findAll();
+    }
 
 
     /**
