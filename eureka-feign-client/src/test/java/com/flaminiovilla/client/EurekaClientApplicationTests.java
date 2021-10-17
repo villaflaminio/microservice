@@ -1,4 +1,4 @@
-package com.flaminiovilla.eurekaclient;
+package com.flaminiovilla.client;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

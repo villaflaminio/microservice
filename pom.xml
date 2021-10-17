@@ -17,7 +17,7 @@
 	
 	<modules>
 		<module>book-share</module>
-		<module>eureka-client</module>
+		<module>eureka-feign-client</module>
 		<module>eureka-discovery-server</module>
 		<module>zull-api-gateway</module>
 		<module>security-oauth2</module>
